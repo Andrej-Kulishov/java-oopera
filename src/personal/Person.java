@@ -3,9 +3,9 @@ package personal;
 import java.util.Objects;
 
 public abstract class Person {
-    private final String name;
-    private final String surname;
-    private final Gender gender;
+    protected final String name;
+    protected final String surname;
+    protected final Gender gender;
 
     Person(String name, String surname, Gender gender) {
         this.name = name;
@@ -38,5 +38,10 @@ public abstract class Person {
         int result = Objects.hashCode(name);
         result = 31 * result + Objects.hashCode(surname);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + surname;
     }
 }

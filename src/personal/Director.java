@@ -18,6 +18,6 @@ public class Director extends Person {
 
     @Override
     public String toString() {
-        return "Director: " + getName() + " " + getSurname() + ".";
+        return "Director: " + super.toString() + ".";
     }
 }

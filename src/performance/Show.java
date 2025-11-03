@@ -6,10 +6,10 @@ import personal.Director;
 import java.util.ArrayList;
 
 public abstract class Show {
-    private final String title;
-    private final Integer duration;
-    private final Director director;
-    private final ArrayList<Actor> listOfActors = new ArrayList<>();
+    protected final String title;
+    protected final Integer duration;
+    protected final Director director;
+    protected final ArrayList<Actor> listOfActors = new ArrayList<>();
 
     public Show(String title, Integer duration, Director director) {
         this.title = title;
